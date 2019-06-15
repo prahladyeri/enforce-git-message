@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import os, sys
-import enforce_git_messages
-from enforce_git_messages import __version__, __description__, __author__, __email__, __license__, __title__
+import enforce_git_message
+from enforce_git_message import __version__, __description__, __author__, __email__, __license__, __title__
 from setuptools import setup, find_packages
 from setuptools.command.install import install
 #from subprocess import check_call
@@ -10,8 +10,8 @@ import site
 from distutils.dir_util import copy_tree
 #import shutil
 
-app_name = "enforce-git-messages"
-pkg_name = "enforce_git_messages"
+app_name = "enforce-git-message"
+pkg_name = "enforce_git_message"
 
 class PostInstallCommand(install):
 	"""Post-installation for installation mode."""
@@ -43,7 +43,7 @@ s = setup(
 	include_package_data=True,
 	entry_points={
 		"console_scripts": [
-			"enforce-git-messages = enforce_git_messages.main:main",
+			"enforce-git-messages = enforce_git_message.main:main",
 		],
 	},
 	install_requires=[],
