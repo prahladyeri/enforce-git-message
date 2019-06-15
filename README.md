@@ -12,7 +12,7 @@
 
 Enforces [conventional git commit messages](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) for all new git repositories you create by running `git init`. For existing repositories, you can go to your source directory and simply run:
 
-	enforce-git-message .
+	enforce-git-message
 
 # Installation
 
