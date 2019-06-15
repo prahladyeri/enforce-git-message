@@ -9,7 +9,7 @@
 [![follow](https://img.shields.io/twitter/follow/prahladyeri.svg?style=social)](https://twitter.com/prahladyeri)
 # enforce-git-message
 
-Enforces [conventional git commit messages](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) for all new git repositories you create by running `git init .`. For existing repositories, you can go to your source directory and simply run:
+Enforces [conventional git commit messages](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) for all new git repositories you create by running `git init`. For existing repositories, you can go to your source directory and simply run:
 
 	enforce-git-message .
 
