@@ -4,5 +4,5 @@ __copyright__ = "(c) 2019 Prahlad Yeri"
 
 __license__ = "MIT"
 __version__ = "1.0.0"
-__title__ = 'Enforce GIT Messages'
+__title__ = 'Enforce GIT Message'
 __description__ = 'Enforces conventional git commit messages for git repositories'

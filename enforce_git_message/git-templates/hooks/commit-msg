@@ -1,27 +1,22 @@
-#!/bin/sh
+#!/usr/bin/env python
+##
+# @author Prahlad Yeri
+# @email prahladyeri@yahoo.com
+# @title Git hook for enforcing conventional commit spec
 #
-# An example hook script to check the commit log message.
-# Called by "git commit" with one argument, the name of the file
-# that has the commit message.  The hook should exit with non-zero
-# status after issuing an appropriate message if it wants to stop the
-# commit.  The hook is allowed to edit the commit message file.
-#
-# To enable this hook, rename this file to "commit-msg".
+# @todo Create folder ~/.git-templatesand set that value to init.templatedir git config key globally.
+# @todo Copy this script to ~/.git-templates/hooks/ and rename it to commit-msg.
+# @todo (Linux): Make the script executable.
+import re, sys, os
 
-# Uncomment the below to add a Signed-off-by line to the message.
-# Doing this in a hook is a bad idea in general, but the prepare-commit-msg
-# hook is more suited to it.
-#
-# SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
-# grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
+def main():
+	# example:
+	# feat(apikey): added the ability to add api key to configuration
+	pattern = r'(build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert)(\([\w\-]+\))?:\s.*'
+	filename = sys.argv[1]
+	ss = open(filename, 'r').read()
+	m = re.match(pattern, ss)
+	if m == None: raise Exception("conventional commit validation failed")
 
-# This example catches duplicate Signed-off-by lines.
-
-#test "" = "$(grep '^Signed-off-by: ' "$1" |
-#	 sort | uniq -c | sed -e '/^[ 	]*1[ 	]/d')" || {
-#	echo >&2 Duplicate Signed-off-by lines.
-#	exit 1
-#}
-
-
-check_commit.py "$1"
+if __name__ == "__main__":
+	main()
