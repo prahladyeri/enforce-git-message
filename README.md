@@ -36,3 +36,6 @@ After that, try doing the commit with a valid message and it should work:
 	> git commit -m "feat(test): added xyz"
 	>
 	
+# Notes
+
+[Read this article](https://prahladyeri.com/blog/2019/06/how-to-enforce-conventional-commit-messages-using-git-hooks.html) to fully understand how the enforcement actually works by using git hooks.
