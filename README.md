@@ -25,9 +25,9 @@ Go to your source folder and try to commit with a non-conventional message like 
 
 	> git commit -m "added a new feature for xyz"
 	Traceback (most recent call last):
-	  File "C:/Users/prahlad/Documents/scripts/check_commit.py", line 14, in <module>
+	  File ".git/hooks/commit-msg", line 22, in <module>
 		main()
-	  File "C:/Users/prahlad/Documents/scripts/check_commit.py", line 11, in main
+	  File ".git/hooks/commit-msg", line 19, in main
 		if m == None: raise Exception("conventional commit validation failed")
 	Exception: conventional commit validation failed
 	
