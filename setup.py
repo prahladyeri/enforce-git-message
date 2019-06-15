@@ -43,7 +43,7 @@ s = setup(
 	include_package_data=True,
 	entry_points={
 		"console_scripts": [
-			"enforce-git-messages = enforce_git_message.main:main",
+			"enforce-git-message = enforce_git_message.main:main",
 		],
 	},
 	install_requires=[],
