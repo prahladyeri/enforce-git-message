@@ -19,7 +19,6 @@ Enforces [conventional git commit messages](https://www.conventionalcommits.org/
 Examples of valid commit messages:
 
 ```diff
-+ > git log --oneline
 + 61c8ca9 (HEAD -> master) fix: navbar not responsive on mobile
 + 479c48b test: prepared test cases for user authentication
 + a992020 chore: moved to semantic versioning
@@ -31,7 +30,6 @@ Examples of valid commit messages:
 Examples of invalid commit messages resulting in an exception:
 
 ```diff
-- > git log --oneline
 - 61c8ca9 (HEAD -> master) fix for navbar not responsive on mobile
 - 479c48b prepared test cases for user authentication
 - a992020 moved to semantic versioning
