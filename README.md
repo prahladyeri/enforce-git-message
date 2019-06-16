@@ -19,7 +19,7 @@ Enforces [conventional git commit messages](https://www.conventionalcommits.org/
 Examples of valid commit messages:
 
 ```diff
-+ 61c8ca9 (HEAD -> master) fix: navbar not responsive on mobile
++ 61c8ca9 fix: navbar not responsive on mobile
 + 479c48b test: prepared test cases for user authentication
 + a992020 chore: moved to semantic versioning
 + b818120 fix: button click even handler firing twice
@@ -30,7 +30,7 @@ Examples of valid commit messages:
 Examples of invalid commit messages resulting in an exception:
 
 ```diff
-- 61c8ca9 (HEAD -> master) fix for navbar not responsive on mobile
+- 61c8ca9 fix for navbar not responsive on mobile
 - 479c48b prepared test cases for user authentication
 - a992020 moved to semantic versioning
 - b818120 fixed button click even handler firing twice
