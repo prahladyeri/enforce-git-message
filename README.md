@@ -10,7 +10,7 @@
 [![follow](https://img.shields.io/twitter/follow/prahladyeri.svg?style=social)](https://twitter.com/prahladyeri)
 # enforce-git-message
 
-![project logo](https://repository-images.githubusercontent.com/192069745/136f2780-903c-11e9-8155-7a04e973c798)
+![project logo](https://repository-images.githubusercontent.com/192069745/136f2780-903c-11e9-8155-7a04e973c798){width=100px}
 
 Enforces [conventional git commit messages](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) for all new git repositories you create by running `git init`. For existing repositories, you can go to your source directory and simply run:
 
