@@ -16,7 +16,7 @@ def main():
 	filename = sys.argv[1]
 	ss = open(filename, 'r').read()
 	m = re.match(pattern, ss)
-	if m == None: raise Exception("conventional commit validation failed")
+	if not m: raise Exception("conventional commit validation failed")
 
 if __name__ == "__main__":
 	main()
