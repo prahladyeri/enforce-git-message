@@ -63,7 +63,11 @@ Go to your source folder and try to commit with a non-conventional message like 
 After that, try doing the commit with a valid message and it should work:
 
 	> git commit -m "feat(test): added xyz"
-	>
+	[master (root-commit) 8797aa0] feat(test): added xyz
+	 6 files changed, 1 insertion(+)
+	 create mode 100644 test.java
+	 create mode 100644 foo.txt
+	 create mode 100644 bar.txt
 	
 # Notes
 
