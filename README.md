@@ -27,7 +27,7 @@ Examples of valid commit messages:
 + dfdc715 feat(auth): added social login using twitter
 ```
 
-Examples of invalid commit messages resulting in an exception:
+Examples of invalid commit messages resulting in an error message:
 
 ```diff
 - 61c8ca9 fix for navbar not responsive on mobile
@@ -48,12 +48,17 @@ Examples of invalid commit messages resulting in an exception:
 Go to your source folder and try to commit with a non-conventional message like this and it should fail:
 
 	> git commit -m "added a new feature for xyz"
-	Traceback (most recent call last):
-	  File ".git/hooks/commit-msg", line 22, in <module>
-		main()
-	  File ".git/hooks/commit-msg", line 19, in main
-		if m == None: raise Exception("conventional commit validation failed")
-	Exception: conventional commit validation failed
+	
+	COMMIT FAILED!
+
+	Please enter commit message in the conventional format and try to commit again. Examples:
+
+	+ 61c8ca9 fix: navbar not responsive on mobile
+	+ 479c48b test: prepared test cases for user authentication
+	+ a992020 chore: moved to semantic versioning
+	+ b818120 fix: button click even handler firing twice
+	+ c6e9a97 fix: login page css
+	+ dfdc715 feat(auth): added social login using twitter
 	
 After that, try doing the commit with a valid message and it should work:
 
