@@ -1,13 +1,11 @@
 ![pypi](https://img.shields.io/pypi/v/enforce-git-message.svg)
 ![python](https://img.shields.io/pypi/pyversions/enforce-git-message.svg)
-![implementation](https://img.shields.io/pypi/implementation/enforce-git-message.svg)
-<!-- https://img.shields.io/travis/prahladyeri/enforce-git-message/master.svg -->
-<!-- ![docs](https://readthedocs.org/projects/enforce-git-message/badge/?version=latest) -->
 ![license](https://img.shields.io/github/license/prahladyeri/enforce-git-message.svg)
 ![last-commit](https://img.shields.io/github/last-commit/prahladyeri/enforce-git-message.svg)
-<!--![commit-activity](https://img.shields.io/github/commit-activity/w/prahladyeri/enforce-git-message.svg)-->
+![docs](https://readthedocs.org/projects/enforce-git-message/badge/?version=latest)
 [![donate](https://img.shields.io/badge/-Donate-blue.svg?logo=paypal)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JM8FUXNFUK6EU)
 [![follow](https://img.shields.io/twitter/follow/prahladyeri.svg?style=social)](https://twitter.com/prahladyeri)
+
 # enforce-git-message
 
 ![project logo](https://raw.githubusercontent.com/prahladyeri/enforce-git-message/master/logo.png)
@@ -42,8 +40,7 @@ Examples of invalid commit messages resulting in an error message:
 
 	pip install enforce-git-message
 	
-	
-# Verifying
+# Verification
 
 Go to your source folder and try to commit with a non-conventional message like this and it should fail:
 
@@ -72,6 +69,10 @@ After that, try doing the commit with a valid message and it should work:
 # Notes
 
 [Read this article](https://prahladyeri.com/blog/2019/06/how-to-enforce-conventional-commit-messages-using-git-hooks.html) to fully understand how the enforcement actually works by using git hooks.
+
+# Documentation
+
+Detailed docs are available at <https://enforce-git-message.readthedocs.io/en/latest/>.
 
 # Attribution
 
