@@ -5,7 +5,9 @@
 Introduction
 ============================
 
-`enforce-git-message <https://github.com/prahladyeri/enforce-git-message>`_ is a python library which enforces [conventional git commit messages](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) for all new git repositories you create by running `git init`. For existing repositories, you can go to your source directory and simply run:
+.. image:: https://raw.githubusercontent.com/prahladyeri/enforce-git-message/master/logo.png
+
+`enforce-git-message <https://github.com/prahladyeri/enforce-git-message>`_ is a tool for enforcing `conventional git commit messages <https://www.conventionalcommits.org/en/v1.0.0-beta.4/>`_ for all new git repositories you create by running `git init`. For existing repositories, you can go to your source directory and simply run::
 
 	enforce-git-message
 
@@ -80,7 +82,7 @@ Attribution
 
 .. raw:: html
 
-<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
 
 Indices and tables

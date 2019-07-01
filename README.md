@@ -40,36 +40,6 @@ Examples of invalid commit messages resulting in an error message:
 
 	pip install enforce-git-message
 	
-# Verification
-
-Go to your source folder and try to commit with a non-conventional message like this and it should fail:
-
-	> git commit -m "added a new feature for xyz"
-	
-	COMMIT FAILED!
-
-	Please enter commit message in the conventional format and try to commit again. Examples:
-
-	+ 61c8ca9 fix: navbar not responsive on mobile
-	+ 479c48b test: prepared test cases for user authentication
-	+ a992020 chore: moved to semantic versioning
-	+ b818120 fix: button click even handler firing twice
-	+ c6e9a97 fix: login page css
-	+ dfdc715 feat(auth): added social login using twitter
-	
-After that, try doing the commit with a valid message and it should work:
-
-	> git commit -m "feat(test): added xyz"
-	[master (root-commit) 8797aa0] feat(test): added xyz
-	 6 files changed, 1 insertion(+)
-	 create mode 100644 test.java
-	 create mode 100644 foo.txt
-	 create mode 100644 bar.txt
-	
-# Notes
-
-[Read this article](https://prahladyeri.com/blog/2019/06/how-to-enforce-conventional-commit-messages-using-git-hooks.html) to fully understand how the enforcement actually works by using git hooks.
-
 # Documentation
 
 Detailed docs are available at <https://enforce-git-message.readthedocs.io/en/latest/>.
