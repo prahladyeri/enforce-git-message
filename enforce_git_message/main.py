@@ -1,4 +1,5 @@
-import shutil, os
+import os
+import shutil
 
 def main():
 	if not os.path.isdir('.git'):
@@ -10,7 +11,7 @@ def main():
 		print('error: git not found on path. please install git and then run pip install --upgrade enforce-git-message')
 		return
 	if not os.path.exists(template_path):
-		print('error: git hooks template not found on %s, please run pip install enforce-git-message' % template_path)
+		print('error: git hooks template not found on {}, please run pip install enforce-git-message'.format(template_path))
 		return
 	shutil.copy(template_path, ".git/hooks/")
 	print("success: conventional git messages are enforced")
