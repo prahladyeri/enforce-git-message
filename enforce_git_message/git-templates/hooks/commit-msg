@@ -30,8 +30,7 @@ args = parser.parse_args()
 
  result = re.match(pattern, commit_message)
 
- if result == None:
+ if not result:
+    print("Please enter commit message in the conventional format and try to commit again. Examples:")
+    print(examples)
     raise Exception("conventional commit validation failed")
-    print("COMMIT FAILED!")
-	print("Please enter commit message in the conventional format and try to commit again. Examples:")
-	print(examples)

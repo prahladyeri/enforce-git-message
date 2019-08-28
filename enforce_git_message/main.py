@@ -7,7 +7,7 @@ def main():
 		return
 	
 	template_path = os.path.expanduser("~/.git-templates/hooks/commit-msg")
-	if shutil.which('git') == None:
+	if not shutil.which('git'):
 		print('error: git not found on path. please install git and then run pip install --upgrade enforce-git-message')
 		return
 	if not os.path.exists(template_path):
