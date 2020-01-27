@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 ##
 # @author Prahlad Yeri
 # @email prahladyeri@yahoo.com
@@ -23,7 +23,7 @@ parser = argparse.ArgumentParser(
 parser.add_argument("filename", help="name of the file", type=str, )
 args = parser.parse_args()
 
- pattern = r"(build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert)(\([\w\-]+\))?:\s.*"
+ pattern = r"(build|chore|ci|docs|feat|fix|style|refactor|revert|perf|test)(\([\w\_\-\.]+\))?:\s.*"
 
  with open(args.filename, 'r') as fp:
     commit_message = fp.read()
