@@ -19,7 +19,7 @@ examples = """+ 61c8ca9 fix: navbar not responsive on mobile
 """
 
 parser = argparse.ArgumentParser(
-	description="Enforces conventional git commit messages.\nRead more at https://www.conventionalcommits.org/en/v1.0.0-beta.4/")
+	description="Enforces conventional git commit messages.\nRead more at https://www.conventionalcommits.org/en/v1.0.0/")
 parser.add_argument("filename", help="name of the file", type=str, )
 args = parser.parse_args()
 
