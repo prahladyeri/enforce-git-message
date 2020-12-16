@@ -1,4 +1,5 @@
-import shutil, os
+import shutil, os, make_executable
+from make_executable import chmod_plus_x
 
 def main():
 	if not os.path.isdir('.git'):
@@ -13,6 +14,7 @@ def main():
 		print('error: git hooks template not found on %s, please run pip install enforce-git-message' % template_path)
 		return
 	shutil.copy(template_path, ".git/hooks/")
+	chmod_plus_x(template_path)
 	print("success: conventional git messages are enforced")
 
 if __name__ == "__main__":
