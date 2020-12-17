@@ -6,7 +6,6 @@
 #
 # @todo Create folder ~/.git-templatesand set that value to init.templatedir git config key globally.
 # @todo Copy this script to ~/.git-templates/hooks/ and rename it to commit-msg.
-# @todo (Linux): Make the script executable.
 import re, sys, os
 
 examples = """+ 61c8ca9 fix: navbar not responsive on mobile
@@ -15,6 +14,17 @@ examples = """+ 61c8ca9 fix: navbar not responsive on mobile
 + b818120 fix: button click even handler firing twice
 + c6e9a97 fix: login page css
 + dfdc715 feat(auth): added social login using twitter
+"""
+
+types = """build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+ci: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+docs: Documentation only changes
+feat: A new feature
+fix: A bug fix
+perf: A code change that improves performance
+refactor: A code change that neither fixes a bug nor adds a feature
+style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+test: Adding missing tests or correcting existing tests
 """
 
 def main():
@@ -29,6 +39,8 @@ def main():
 		print("\nCOMMIT FAILED!")
 		print("\nPlease enter commit message in the conventional format and try to commit again. Examples:")
 		print("\n" + examples)
+		print("\nCHECK COMMIT CONVENTIONS BELOW!")
+		print("\n" + types)
 		sys.exit(1)
 
 if __name__ == "__main__":
