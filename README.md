@@ -3,7 +3,8 @@
 ![license](https://img.shields.io/github/license/prahladyeri/enforce-git-message.svg)
 ![last-commit](https://img.shields.io/github/last-commit/prahladyeri/enforce-git-message.svg)
 ![docs](https://readthedocs.org/projects/enforce-git-message/badge/?version=latest)
-[![donate](https://img.shields.io/badge/-Donate-blue.svg?logo=paypal)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JM8FUXNFUK6EU)
+[![patreon](https://img.shields.io/badge/Patreon-brown.svg?logo=patreon)](https://www.patreon.com/prahladyeri)
+[![paypal](https://img.shields.io/badge/PayPal-blue.svg?logo=paypal)](https://paypal.me/prahladyeri)
 [![follow](https://img.shields.io/twitter/follow/prahladyeri.svg?style=social)](https://twitter.com/prahladyeri)
 
 # enforce-git-message
