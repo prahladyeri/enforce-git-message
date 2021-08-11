@@ -11,7 +11,7 @@
 
 ![project logo](https://raw.githubusercontent.com/prahladyeri/enforce-git-message/master/logo.png)
 
-Enforces [conventional git commit messages](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) for all new git repositories you create by running `git init`
+Enforces [conventional git commit messages](https://www.conventionalcommits.org/en/v1.0.0/) for all new git repositories you create by running `git init`
 
 # Installation
 

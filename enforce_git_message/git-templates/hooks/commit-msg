@@ -4,10 +4,11 @@
 # @email prahladyeri@yahoo.com
 # @title Git hook for enforcing conventional commit spec
 #
-# @todo Create folder ~/.git-templatesand set that value to init.templatedir git config key globally.
+# @todo Create folder ~/.git-templates and set that value to init.templatedir git config key globally.
 # @todo Copy this script to ~/.git-templates/hooks/ and rename it to commit-msg.
 # @todo (Linux): Make the script executable.
-import re, sys, os
+import re
+import argparse
 
 examples = """+ 61c8ca9 fix: navbar not responsive on mobile
 + 479c48b test: prepared test cases for user authentication
@@ -17,19 +18,19 @@ examples = """+ 61c8ca9 fix: navbar not responsive on mobile
 + dfdc715 feat(auth): added social login using twitter
 """
 
-def main():
-	# example:
-	# feat(apikey): added the ability to add api key to configuration
-	pattern = r'(build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert)(\([\w\-]+\))?:\s.*'
-	filename = sys.argv[1]
-	ss = open(filename, 'r').read()
-	m = re.match(pattern, ss)
-	if m == None:
-		#raise Exception("conventional commit validation failed")
-		print("\nCOMMIT FAILED!")
-		print("\nPlease enter commit message in the conventional format and try to commit again. Examples:")
-		print("\n" + examples)
-		sys.exit(1)
+parser = argparse.ArgumentParser(
+	description="Enforces conventional git commit messages.\nRead more at https://www.conventionalcommits.org/en/v1.0.0/")
+parser.add_argument("filename", help="name of the file", type=str, )
+args = parser.parse_args()
 
-if __name__ == "__main__":
-	main()
+ pattern = r"(build|chore|ci|docs|feat|fix|style|refactor|revert|perf|test)(\([\w\_\-\.]+\))?:\s.*"
+
+ with open(args.filename, 'r') as fp:
+    commit_message = fp.read()
+
+ result = re.match(pattern, commit_message)
+
+ if not result:
+    print("Please enter commit message in the conventional format and try to commit again. Examples:")
+    print(examples)
+    raise Exception("conventional commit validation failed")
